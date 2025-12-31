@@ -1,0 +1,73 @@
+# ============================================
+# SARIKA AI - ML Training Requirements
+# Space-Efficient Multi-Architecture Distillation
+# Hardware: RTX 5060 Ti 16GB + 200GB SSD
+# ============================================
+
+# Core Deep Learning Framework
+# CUDA 12.1 compatible (for RTX 5060 Ti)
+torch==2.4.0+cu121
+torchvision==0.19.0+cu121
+torchaudio==2.4.0+cu121
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+# Transformers & Model Training
+transformers==4.46.0          # Latest stable
+accelerate==0.34.2            # Distributed training
+peft==0.13.2                  # LoRA/QLoRA for efficient fine-tuning
+bitsandbytes==0.44.1          # 4-bit quantization (75% memory savings)
+optimum==1.23.0               # Model optimization
+sentencepiece==0.2.0          # Tokenization
+protobuf==4.25.3              # Protocol buffers
+safetensors==0.4.5            # Safe model serialization
+
+# Dataset & Data Processing
+datasets==3.0.1               # HuggingFace datasets
+pandas==2.2.3                 # Data manipulation
+numpy==1.26.4                 # Numerical computing
+scikit-learn==1.5.2           # ML utilities
+pyarrow==17.0.0               # Fast data loading
+
+# Training Monitoring & Logging
+tensorboard==2.18.0           # Training visualization
+wandb==0.18.7                 # Experiment tracking (optional)
+tqdm==4.66.5                  # Progress bars
+
+# Evaluation Metrics
+evaluate==0.4.3               # HF evaluation library
+rouge-score==0.1.2            # ROUGE metrics
+sacrebleu==2.4.3              # BLEU score
+nltk==3.9.1                   # NLP utilities
+bert-score==0.3.13            # BERT-based metrics
+
+# Bengali NLP
+bnlp-toolkit==3.7.2           # Bengali text processing
+indic-nlp-library==0.92       # Indic languages support
+indicnlp==0.1                 # Additional Indic tools
+
+# Configuration & Environment
+python-dotenv==1.0.1          # Environment variables
+pyyaml==6.0.2                 # YAML configuration
+omegaconf==2.3.0              # Hierarchical configs
+hydra-core==1.3.2             # Config management
+
+# Utilities
+requests==2.32.3              # HTTP requests
+tqdm==4.66.5                  # Progress bars
+colorama==0.4.6               # Colored terminal output
+tabulate==0.9.0               # Pretty tables
+psutil==6.1.0                 # System monitoring
+
+# HuggingFace Hub Integration
+huggingface-hub==0.26.2       # Model hub interaction
+hf-transfer==0.1.8            # Fast downloads
+
+# Optional: Distributed Training
+deepspeed==0.15.4             # DeepSpeed optimization (if needed)
+
+# Development Tools
+ipython==8.29.0               # Better REPL
+jupyterlab==4.3.3             # Notebooks (optional)
+black==24.10.0                # Code formatting
+flake8==7.1.1                 # Linting
+pytest==8.3.4                 # Testing

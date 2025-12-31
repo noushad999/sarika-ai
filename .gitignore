@@ -1,0 +1,11 @@
+*.pyc
+__pycache__/
+.env
+models/cache/
+ml/checkpoints/
+*.safetensors
+*.bin
+*.pth
+.vscode/
+.ipynb_checkpoints/
+.env

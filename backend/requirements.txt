@@ -1,0 +1,68 @@
+# ============================================
+# SARIKA AI - Backend API Requirements
+# FastAPI Production Server
+# ============================================
+
+# Web Framework
+fastapi==0.115.5              # Modern async API framework
+uvicorn[standard]==0.32.1     # ASGI server
+pydantic==2.10.3              # Data validation
+pydantic-settings==2.6.1      # Settings management
+
+# Database
+sqlalchemy==2.0.36            # ORM
+alembic==1.14.0               # Database migrations
+asyncpg==0.30.0               # PostgreSQL async driver
+psycopg2-binary==2.9.10       # PostgreSQL driver
+
+# Redis (Caching & Sessions)
+redis==5.2.0                  # Redis client
+aioredis==2.0.1               # Async Redis
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0  # JWT tokens
+passlib[bcrypt]==1.7.4        # Password hashing
+python-multipart==0.0.17      # File uploads
+cryptography==43.0.3          # Encryption
+
+# Vector Database (Memory System)
+pinecone-client==5.0.1        # Pinecone vector DB
+qdrant-client==1.12.1         # Alternative: Qdrant
+chromadb==0.5.23              # Alternative: ChromaDB
+
+# LLM Integration
+openai==1.54.5                # OpenAI API (for synthetic data)
+anthropic==0.39.0             # Claude API (optional)
+langchain==0.3.9              # LLM orchestration
+langchain-community==0.3.8    # Community integrations
+sentence-transformers==3.2.1  # Embeddings
+
+# Voice Integration
+openai-whisper==20231117      # Speech-to-text
+elevenlabs==1.10.0            # Text-to-speech
+pydub==0.25.1                 # Audio processing
+
+# Payment Gateway
+sslcommerz-python==1.0        # SSLCommerz Bangladesh
+stripe==11.2.0                # International payments
+
+# Background Tasks
+celery==5.4.0                 # Task queue
+redis==5.2.0                  # Celery broker
+
+# Monitoring & Logging
+sentry-sdk[fastapi]==2.18.0   # Error tracking
+loguru==0.7.2                 # Better logging
+prometheus-client==0.21.0     # Metrics
+
+# HTTP & API
+httpx==0.28.1                 # Async HTTP client
+aiohttp==3.11.10              # Async HTTP
+requests==2.32.3              # Sync HTTP
+
+# Utils
+python-dotenv==1.0.1          # Environment variables
+pydantic-settings==2.6.1      # Settings
+email-validator==2.2.0        # Email validation
+python-dateutil==2.9.0        # Date utilities
+pytz==2024.2                  # Timezone support
